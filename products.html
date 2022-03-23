@@ -61,6 +61,18 @@
     /* z-index:5; It's already stacked above if positioned. Needed if other positioned elements are there (a value of 1 would be enough) */
     transform: translate(-10px, 30px); /* replaces relative positioning (left and top => X and Y) */
 }
+.para-text {
+    /* background:#942911; */
+    color:white;
+    top:60px;
+    left: 10px;
+    width : 180px;
+    height : 60px;
+    font-size: 15px;
+    position: absolute; /* not relative anymore */
+    /* z-index:5; It's already stacked above if positioned. Needed if other positioned elements are there (a value of 1 would be enough) */
+    transform: translate(-10px, 30px); /* replaces relative positioning (left and top => X and Y) */
+}
 .navbar {
   overflow: hidden;
   background-color: slategrey;
@@ -100,7 +112,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
+.top-left {
+  position: absolute;
+  top: 18px;
+  left: -117px;
+}
 </style>
 <body>
 
@@ -110,10 +126,14 @@
      <p1 class="head-text">Oregano</p1> 
      <p1 class="head-texttwo">LETS GET STARTED</p1> 
    <div class="centered">
+   <img src="https://images.ctfassets.net/hrltx12pl8hq/4f6DfV5DbqaQUSw0uo0mWi/6fbcf889bdef65c5b92ffee86b13fc44/shutterstock_376532611.jpg?fit=fill&w=800&h=300" alt="Italian Trulli">
+   <div class="top-left"><h1> <span style="color: white;">Study Case </span>
+  </h1>
+  <p class="para-text">
+    Run in circles show belly, lick paws then retire to the warmest spot on the couch to claw at the fabric.
+  </p>
+</div>
    
-    <img src="https://images.ctfassets.net/hrltx12pl8hq/4f6DfV5DbqaQUSw0uo0mWi/6fbcf889bdef65c5b92ffee86b13fc44/shutterstock_376532611.jpg?fit=fill&w=800&h=300" alt="Italian Trulli">
-    <h1>Study Case
-    </h1>
    </div>
    <!-- <div>
       <h1 class ="headtwostyle" > ely regret  o bathtub
