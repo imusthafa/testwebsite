@@ -1,153 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oregano</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oregano</title>
 </head>
-<style>
-    body {
-  background-color: rgb(240, 241, 243);
-  font-family: Arial, Helvetica, sans-serif;
-}
 
-
-
-
-.headstyle {
-    /* background:#942911; */
-    color:white;
-    top:200px;
-    left: 550px;
-    width : 150px;
-    height : 60px;
-    position: absolute; /* not relative anymore */
-    /* z-index:5; It's already stacked above if positioned. Needed if other positioned elements are there (a value of 1 would be enough) */
-    transform: translate(-10px, 30px); /* replaces relative positioning (left and top => X and Y) */
-}
-.headtwostyle {
-    /* background:#942911; */
-    color:slategrey;
-    top:200px;
-    left: 720px;
-    width : 150px;
-    height : 60px;
-    position: absolute; /* not relative anymore */
-    /* z-index:5; It's already stacked above if positioned. Needed if other positioned elements are there (a value of 1 would be enough) */
-    transform: translate(-10px, 30px); /* replaces relative positioning (left and top => X and Y) */
-}
-.head-text {
-    /* background:#942911; */
-    color:white;
-    top:10px;
-    left: 120px;
-    width : 50px;
-    height : 60px;
-    font-size: 15px;
-    position: absolute; /* not relative anymore */
-    /* z-index:5; It's already stacked above if positioned. Needed if other positioned elements are there (a value of 1 would be enough) */
-    transform: translate(-10px, 30px); /* replaces relative positioning (left and top => X and Y) */
-}
-.head-texttwo {
-    /* background:#942911; */
-    color:slategrey;
-    top:10px;
-    left: 1050px;
-    width : 250px;
-    height : 60px;
-    font-size: 10px;
-    position: absolute; /* not relative anymore */
-    /* z-index:5; It's already stacked above if positioned. Needed if other positioned elements are there (a value of 1 would be enough) */
-    transform: translate(-10px, 30px); /* replaces relative positioning (left and top => X and Y) */
-}
-.para-text {
-    /* background:#942911; */
-    color:white;
-    top:60px;
-    left: 10px;
-    width : 180px;
-    height : 60px;
-    font-size: 15px;
-    position: absolute; /* not relative anymore */
-    /* z-index:5; It's already stacked above if positioned. Needed if other positioned elements are there (a value of 1 would be enough) */
-    transform: translate(-10px, 30px); /* replaces relative positioning (left and top => X and Y) */
-}
-.navbar {
-  overflow: hidden;
-  background-color: slategrey;
-  position: fixed;
-  bottom: 0;
-  width: 98.7%;
-  background: linear-gradient(-90deg, white 45%, slategrey 45%);
-  /* width: 54.3%; */
-}
-
-.navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 40px 40px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.navbar a:hover {
-  background: slategrey;
-  color: black;
-}
-
-.navbar a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-.container {
-  min-height: 100vh;
-  background: linear-gradient(-90deg, white 45%, slategrey 45%);
-}
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.top-left {
-  position: absolute;
-  top: 18px;
-  left: -117px;
-}
-</style>
 <body>
 
-  
-<div class="container">
+  <link rel="stylesheet" href="style.css">
+  <div class="productcontainer">
 
-     <p1 class="head-text">Oregano</p1> 
-     <p1 class="head-texttwo">LETS GET STARTED</p1> 
-   <div class="centered">
-   <img src="https://images.ctfassets.net/hrltx12pl8hq/4f6DfV5DbqaQUSw0uo0mWi/6fbcf889bdef65c5b92ffee86b13fc44/shutterstock_376532611.jpg?fit=fill&w=800&h=300" alt="Italian Trulli">
-   <div class="top-left"><h1> <span style="color: white;">Study Case </span>
-  </h1>
-  <p class="para-text">
-    Run in circles show belly, lick paws then retire to the warmest spot on the couch to claw at the fabric.
-  </p>
-</div>
-   
-   </div>
-   <!-- <div>
-      <h1 class ="headtwostyle" > ely regret  o bathtub
-      </h1 >
-    </div> -->
-  
+    <a href="index.html" style="text-decoration: none;" class="producthead-text">Oregano</a>
+    
+    <p1 class="producthead-texttwo">WHAT WE DO</p1>
+    <div class="productcentered">
+      <img
+        src="https://images.ctfassets.net/hrltx12pl8hq/4f6DfV5DbqaQUSw0uo0mWi/6fbcf889bdef65c5b92ffee86b13fc44/shutterstock_376532611.jpg?fit=fill&w=800&h=300"
+        alt="Italian Trulli">
+      <div class="producttop-left">
+        <h1> <span style="color: white;">Study Case </span>
+        </h1>
+        <p class="productpara-text">
+          Run in circles show belly, lick paws then retire to the warmest spot on the couch to claw at the fabric.
+        </p>
+      </div>
 
-    <div class="navbar">
+    </div>
+  <div class="productnavbar">
       <a href="about.html" class="">About</a>
       <a href="#" class="">Product</a>
-      <a href="contact-us.html" class="">Contact</a> 
-     
+      <a href="contact-us.html" class="">Contact</a>
+
     </div>
- </div>
+  </div>
 
 </body>
+
 </html>

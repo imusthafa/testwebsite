@@ -1,59 +1,65 @@
 
+  
     body {
   background-color: rgb(240, 241, 243);
   font-family: Arial, Helvetica, sans-serif;
 }
+@media(max-width:400px){
+  .responsive-text{
+       font-size:14px;
+      }
+    }
 
 
+/* index page style */
 
-
-.headstyle {
+.indexheadstyle {
     /* background:#942911; */
     color:white;
     top:200px;
-    left: 560px;
-    width : 100%;
+    left: 555px;
+    width : 35%;
     height : 60px;
     position: absolute; /* not relative anymore */
     /* z-index:5; It's already stacked above if positioned. Needed if other positioned elements are there (a value of 1 would be enough) */
     transform: translate(-10px, 30px); /* replaces relative positioning (left and top => X and Y) */
 }
-.headtwostyle {
+.indexheadtwostyle {
     /* background:#942911; */
     color:slategrey;
     top:200px;
     left: 710px;
-    width : 100%;
+    width : 80%;
     height : 60px;
     position: absolute; /* not relative anymore */
     /* z-index:5; It's already stacked above if positioned. Needed if other positioned elements are there (a value of 1 would be enough) */
     transform: translate(-10px, 30px); /* replaces relative positioning (left and top => X and Y) */
 }
-.head-text {
+.indexhead-text {
     /* background:#942911; */
     color:white;
     top:10px;
     left: 120px;
     width : 50px;
     height : 60px;
-    font-size: 15px;
+    font-size: 20px;
     position: absolute; /* not relative anymore */
     /* z-index:5; It's already stacked above if positioned. Needed if other positioned elements are there (a value of 1 would be enough) */
     transform: translate(-10px, 30px); /* replaces relative positioning (left and top => X and Y) */
 }
-.head-texttwo {
+.indexhead-texttwo {
     /* background:#942911; */
     /* color:slategrey; */
     top:10px;
     left: 1050px;
     width : 250px;
     height : 60px;
-    font-size: 10px;
+    font-size: 20px;
     position: absolute; /* not relative anymore */
     /* z-index:5; It's already stacked above if positioned. Needed if other positioned elements are there (a value of 1 would be enough) */
     transform: translate(-10px, 30px); /* replaces relative positioning (left and top => X and Y) */
 }
-.navbar {
+.indexnavbar {
   overflow: hidden;
   background-color: slategrey;
   position: fixed;
@@ -63,7 +69,7 @@
   /* width: 54.3%; */
 }
 
-.navbar a {
+.indexnavbar a {
   float: left;
   display: block;
   color: #f2f2f2;
@@ -73,7 +79,7 @@
   font-size: 17px;
 }
 
-.navbar a:hover {
+.indexnavbar a:hover {
   background: slategrey;
   color: black;
 }
@@ -82,7 +88,322 @@
   background-color: #04AA6D;
   color: white;
 }
-.container {
+.indexcontainer {
   min-height: 100vh;
   background: linear-gradient(-90deg, white 45%, slategrey 45%);
 }
+
+/* about page style  */
+
+.aboutheadstyle {
+    /* background:#942911; */
+    color:slategrey;
+    top:80px;
+    left: 150px;
+    width : 380px;
+    height : 60px;
+    position: absolute; /* not relative anymore */
+    /* z-index:5; It's already stacked above if positioned. Needed if other positioned elements are there (a value of 1 would be enough) */
+    transform: translate(-10px, 30px); /* replaces relative positioning (left and top => X and Y) */
+}
+.aboutheadtwostyle {
+    /* background:#942911; */
+    color:white;
+    top:200px;
+    left: 750px;
+    width : 500px;
+    height : 60px;
+    position: absolute; /* not relative anymore */
+    /* z-index:5; It's already stacked above if positioned. Needed if other positioned elements are there (a value of 1 would be enough) */
+    transform: translate(-10px, 30px); /* replaces relative positioning (left and top => X and Y) */
+}
+.abouthead-text {
+    /* background:#942911; */
+    color:slategrey;
+    top:10px;
+    left: 120px;
+    width : 150px;
+    height : 60px;
+    font-size: 20px;
+    position: absolute; /* not relative anymore */
+    /* z-index:5; It's already stacked above if positioned. Needed if other positioned elements are there (a value of 1 would be enough) */
+    transform: translate(-10px, 30px); /* replaces relative positioning (left and top => X and Y) */
+}
+.abouthead-texttwo {
+    /* background:#942911; */
+    color:white;
+    top:10px;
+    left: 1050px;
+    width : 250px;
+    height : 60px;
+    font-size: 20px;
+    position: absolute; /* not relative anymore */
+    /* z-index:5; It's already stacked above if positioned. Needed if other positioned elements are there (a value of 1 would be enough) */
+    transform: translate(-10px, 30px); /* replaces relative positioning (left and top => X and Y) */
+}
+.aboutdemo-bg {
+
+  opacity: 0.2;
+    position: absolute;
+    left: 182px;
+    top: 28%;
+    width: 25%;
+    height: 50%;
+}
+.aboutnavbar {
+  overflow: hidden;
+  /* background-color: slategrey; */
+  position: fixed;
+  bottom: 0;
+  width: 98.7%;
+  background: linear-gradient(-90deg, slategrey 45%, white 45%);
+  /* width: 54.3%; */
+}
+
+.aboutnavbar a {
+  float: left;
+  display: block;
+  color: slategrey;
+  text-align: center;
+  padding: 40px 40px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.aboutnavbar a:hover {
+  background: white;
+  color: black;
+}
+
+.aboutnavbar a.active {
+  background-color: #04AA6D;
+  color: slategrey;
+}
+.aboutcontainer {
+  min-height: 120vh;
+  background: linear-gradient(-90deg, slategrey 45%, white 45%);
+}
+
+/* product page  */
+
+.productheadstyle {
+    /* background:#942911; */
+    color:white;
+    top:200px;
+    left: 550px;
+    width : 150px;
+    height : 60px;
+    position: absolute; /* not relative anymore */
+    /* z-index:5; It's already stacked above if positioned. Needed if other positioned elements are there (a value of 1 would be enough) */
+    transform: translate(-10px, 30px); /* replaces relative positioning (left and top => X and Y) */
+}
+.productheadtwostyle {
+    /* background:#942911; */
+    color:slategrey;
+    top:200px;
+    left: 720px;
+    width : 150px;
+    height : 60px;
+    position: absolute; /* not relative anymore */
+    /* z-index:5; It's already stacked above if positioned. Needed if other positioned elements are there (a value of 1 would be enough) */
+    transform: translate(-10px, 30px); /* replaces relative positioning (left and top => X and Y) */
+}
+.producthead-text {
+    /* background:#942911; */
+    color:white;
+    top:10px;
+    left: 120px;
+    width : 50px;
+    height : 60px;
+    font-size: 20px;
+    position: absolute; /* not relative anymore */
+    /* z-index:5; It's already stacked above if positioned. Needed if other positioned elements are there (a value of 1 would be enough) */
+    transform: translate(-10px, 30px); /* replaces relative positioning (left and top => X and Y) */
+}
+.producthead-texttwo {
+    /* background:#942911; */
+    color:slategrey;
+    top:10px;
+    left: 1050px;
+    width : 250px;
+    height : 60px;
+    font-size: 20px;
+    position: absolute; /* not relative anymore */
+    /* z-index:5; It's already stacked above if positioned. Needed if other positioned elements are there (a value of 1 would be enough) */
+    transform: translate(-10px, 30px); /* replaces relative positioning (left and top => X and Y) */
+}
+.productpara-text {
+    /* background:#942911; */
+    color:white;
+    top:60px;
+    left: 10px;
+    width : 180px;
+    height : 60px;
+    font-size: 15px;
+    position: absolute; /* not relative anymore */
+    /* z-index:5; It's already stacked above if positioned. Needed if other positioned elements are there (a value of 1 would be enough) */
+    transform: translate(-10px, 30px); /* replaces relative positioning (left and top => X and Y) */
+}
+.productnavbar {
+  overflow: hidden;
+  background-color: slategrey;
+  position: fixed;
+  bottom: 0;
+  width: 98.7%;
+  background: linear-gradient(-90deg, white 45%, slategrey 45%);
+  /* width: 54.3%; */
+}
+
+.productnavbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 40px 40px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.productnavbar a:hover {
+  background: slategrey;
+  color: black;
+}
+
+.productnavbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.productcontainer {
+  min-height: 100vh;
+  background: linear-gradient(-90deg, white 45%, slategrey 45%);
+}
+.productcentered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.producttop-left {
+  position: absolute;
+  top: 18px;
+  left: -117px;
+}
+
+/* contact-us page  */
+
+
+
+.contactheadstyle {
+    /* background:#942911; */
+    color:white;
+    top: 50px;
+    left: 180px;
+    width : 250px;
+    height : 80px;
+    position: absolute; /* not relative anymore */
+    /* z-index:5; It's already stacked above if positioned. Needed if other positioned elements are there (a value of 1 would be enough) */
+    transform: translate(-10px, 30px); /* replaces relative positioning (left and top => X and Y) */
+}
+.contactheadtwostyle {
+    /* background:#942911; */
+    color:slategrey;
+    top:200px;
+    left: 720px;
+    width : 150px;
+    height : 60px;
+    position: absolute; /* not relative anymore */
+    /* z-index:5; It's already stacked above if positioned. Needed if other positioned elements are there (a value of 1 would be enough) */
+    transform: translate(-10px, 30px); /* replaces relative positioning (left and top => X and Y) */
+}
+.contacthead-text {
+    /* background:#942911; */
+    color:slategrey;
+    top:10px;
+    left: 120px;
+    width : 50px;
+    height : 60px;
+    font-size: 20px;
+    position: absolute; /* not relative anymore */
+    /* z-index:5; It's already stacked above if positioned. Needed if other positioned elements are there (a value of 1 would be enough) */
+    transform: translate(-10px, 30px); /* replaces relative positioning (left and top => X and Y) */
+}
+.contacthead-texttwo {
+    /* background:#942911; */
+    color:white;
+    top:10px;
+    left: 1050px;
+    width : 250px;
+    height : 60px;
+    font-size: 20px;
+    position: absolute; /* not relative anymore */
+    /* z-index:5; It's already stacked above if positioned. Needed if other positioned elements are there (a value of 1 would be enough) */
+    transform: translate(-10px, 30px); /* replaces relative positioning (left and top => X and Y) */
+}
+.contactnavbar {
+  overflow: hidden;
+  background-color: slategrey;
+  position: fixed;
+  bottom: 0;
+  width: 98.7%;
+  background: linear-gradient(-90deg, black 45%, white 45%);
+  /* width: 54.3%; */
+}
+
+.contactnavbar a {
+  float: left;
+  display: block;
+  color: slategrey;
+  text-align: center;
+  padding: 40px 40px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.contactnavbar a:hover {
+  background: white;
+  color: black;
+}
+
+.contactnavbar a.active {
+  background-color: #04AA6D;
+  color: slategrey;
+}
+.contactcontainer {
+  min-height: 120vh;
+  background: linear-gradient(-90deg, black 45%, white 45%);
+}
+
+input[type=text], select, textarea {
+  width: 150%;
+  padding: 12px;
+  border: 1px solid white;
+  border-radius: 20px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: white;
+  color: slategrey;
+  padding: 12px 160px;
+  border: 50%;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color:black;
+}
+.contactlogin
+{
+    width:250px;
+    margin:0px auto;
+}
+.contacttb1 {
+    background-color : slategrey;
+    color: white;
+    border-style: none;
+}
+
